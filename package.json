@@ -1,0 +1,40 @@
+{
+  "name": "vuejs-stryker-mutation",
+  "version": "1.0.0",
+  "description": "Example project using Stryker with Vue.js components",
+  "main": "stryker.conf.js",
+  "scripts": {
+    "test": "jest",
+    "stryker": "stryker run stryker.conf.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(tsx?|html)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  },
+  "dependencies": {
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "jest-runtime": "^21.2.1",
+    "stryker": "^0.13.0",
+    "stryker-api": "^0.11.0",
+    "stryker-jest-runner": "^0.3.0",
+    "stryker-typescript": "0.3.0",
+    "ts-jest": "^21.1.4",
+    "typescript": "^2.5.3",
+    "vue": "^2.5.3",
+    "vue-class-component": "^6.1.0"
+  },
+  "devDependencies": {},
+  "author": "Christoffer Kjeldgaard Petersen",
+  "license": "ISC"
+}
